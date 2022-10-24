@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: center;}
+.name{
+    font-size: 3cm;
+    color: lightblue;
+}
+body{
+    background-color: black;
+}
+.all{
+    flex-direction: column;
+    display: flex;
+    align-items: center;}
+#opt{
+    display: block;
+    width: 50px;
+
+}
+#retorno{
+ color: aquamarine;
+}
