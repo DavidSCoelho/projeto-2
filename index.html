@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/dekodetalk.css">
+    <title>Dekode Talk</title>
     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/dekodetalk.css">
 </head>
 <body>
     <header class="header">
         <h1 class="name">DEKODE TALK</h1>
     </header>
-<div class="all">
+<form>
+<div class="all form-group">
     <div class="text">
-        <input type="text" class="texto">
-    </div> 
- <select name="code" id="code">
+        <input type="text" class="texto form-control">
+    </div>
+
+    <label for="code" class="badge badge-pill badge-danger">Criptografia a usar</label>
+    <div class="form-group">
+ <select name="code" id="code" class="form-control">
     <option value="base64">Base 64</option>
     <option value="cifra">Cifra de Cesar</option>
  </select>
- <select name="options" id="opt">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
- </select>
- <div class="menu">
-    <button id="encode">Codificar</button>
-    <button id="decode">Decodificar</button>
-    </div>
- <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
 </div>
+
+<label for="opt" class="badge badge-pill badge-danger">Deslocamento para Cifra de Cesar</label>
+<div class="form-group">
+<input type="number" min="1" max="25" id="opt" class="form-control">
+</div>
+ <div class="menu">
+    <button id="encode" class="btn btn-outline-info">Codificar</button>
+    <button id="decode" class="btn btn-outline-info">Decodificar</button>
+    </div>
+<div>
+    <p id="texto"></p>
+</div>
+</div>
+</form>
 <script src="./js/dekodetalk.js"></script>
 </body>
 </html>

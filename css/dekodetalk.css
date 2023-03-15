@@ -14,9 +14,10 @@ body{
     align-items: center;}
 #opt{
     display: block;
-    width: 50px;
+    width: 60px;
 
 }
-#retorno{
- color: aquamarine;
+#texto{
+    background-color: blue;
+     color: aquamarine;
 }
